@@ -36,7 +36,7 @@
     <!--Add Sounds-->    
     <a-entity id="sound1" sound="src: #shoot; poolSize:2; autoplay: false; volume: 1;loop:false"></a-entity>
 
-    <a-entity id="sound2" sound="src: #footstep; poolSize:2; autoplay: false; volume: 8; loop:false"></a-entity>
+    <a-entity id="sound2" sound="src: #footstep; poolSize:2; autoplay: false; volume: 4; loop:false"></a-entity>
     
     <!--Game Objects-->
     <a-entity wire-fence boxes></a-entity>
@@ -52,7 +52,8 @@
 
     <!--Camera and Cursor-->
     <a-entity id="camera" camera position="0 1.6 0" wasd-controls look-controls="pointerLockEnabled: false">
-      <a-entity id="weapon" gltf-model="#shooter" position="0 -4.4 3" rotation="0 180 0" scale="0.35 1 1">
+      <a-entity id="weapon" gltf-model="#shooter" position="0 -4.4 3" rotation="0 180 0" scale="0.35 1 1"
+        player-movement>
       </a-entity>
       <a-cursor></a-cursor>
     </a-entity>    
